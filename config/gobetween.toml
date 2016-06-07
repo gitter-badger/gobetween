@@ -75,7 +75,8 @@ backend_connection_timeout = "0"
 #
 #  # -- exec -- #
 #  kind = "exec"
-#  exec_command = "/path/to/healthcheck.sh"      # (required) command to execute
+#  exec_command = "/path/to/healthcheck.sh"      # UNIX/LINUX/MAC(required) command to execute
+#  exec_command = 'C:\path\to\healthcheck.bat'      # WINDOWS(required) command to execute
 #  exec_expected_positive_output = "1"           # (required) expected output of command in case of success
 #  exec_expected_negative_output = "0"           # (required) expected output of command in case of failure
 #
@@ -123,7 +124,8 @@ backend_connection_timeout = "0"
 #  # host2:port2 weight=N
 #  # ...
 #  kind = "exec"
-#  exec_command = ["/path/to/script", "arg1", "arg2"] # (required) command to exec and variable-length arguments
+#  exec_command = ["/path/to/script", "arg1", "arg2"] # UNIX/LINUIX/MAC(required) command to exec and variable-length arguments
+#  exec_command = ['C:\path\to\script.bat', "arg1", "arg2"] # WINDOWS(required) command to exec and variable-length arguments
 #
 #  # -- plaintext -- #
 #  # Plain text discovery works on regexp. It parce strings separated by \n(new line symbol)
